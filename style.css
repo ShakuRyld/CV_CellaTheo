@@ -1,0 +1,279 @@
+Bandeau header bleu
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: #50608e;
+    color: white;
+    padding: 5px 20px;
+}
+header .titre {
+    text-align: center;
+}
+header .titre h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header .titre h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 5px 0 15px;
+}
+header .profil {
+    text-align: left;
+    max-width: 1000px;
+    margin: 20px 20px;
+    font-size: 16px;
+} 
+
+/* Conteneur en 2 colonnes */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* colonne gauche 1 tier écran, colonne 2/3 écran  */
+    gap: 20px;
+    padding: 0px;
+    min-height: auto; /* prend au moins toute la hauteur de l’écran */
+}
+/* Colonne gauche */
+aside {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+aside h3 {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #50608e;
+    border-bottom: 5px solid #303030;
+    padding-bottom: 5px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin: 8px 0;
+}
+/* Colonne droite */
+main {
+    background-color: rgba(119, 136, 153, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main h3 {
+    margin-top: 25px;
+    border-bottom: 5px solid #303030;
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: #000000;
+}
+
+main ul {
+    list-style: none;
+}
+
+main li {
+    margin: 8px 0;
+}
+.date {
+    display: inline-block;
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 14px;
+}
+/* Lien linkedin */
+a {
+    color: #1E3A8A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle; /* aligne avec le texte */
+    margin-right: 5px;
+    fill: #1E3A8A; /* si SVG, garde ton bleu */
+}
+@media (max-width: 768px) {
+    /* Colonnes empilées */
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    aside, main {
+        margin-bottom: 20px; /* espace entre les blocs */
+    }
+
+    /* Header ajusté */
+    header .titre h1 {
+        font-size: 28px;
+    }
+
+    header .titre h3 {
+        font-size: 18px;
+    }
+
+    header .profil {
+        max-width: 100%;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    /* Ajuste les listes */
+    aside li, main li {
+        font-size: 14px;
+    }
+
+    /* Icônes plus petites */
+    .icon {
+        width: 8px;
+        height: 8px;
+    }
+}body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #50608e;
+    color: white;
+    padding: 20px;
+}
+
+header .titre {
+    text-align: center;
+}
+
+header .titre h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header .titre h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 5px 0 15px;
+}
+
+header .profil {
+    text-align: left;
+    max-width: 1000px;
+    margin: 20px 20px;
+    font-size: 16px;
+}
+
+/* Grid row */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: stretch; /* mêmes hauteurs */
+    margin: 20px;
+}
+
+/* Colonnes */
+aside, main {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+aside {
+    background-color: white;
+}
+
+main {
+    background-color: rgba(119, 136, 153, 0.2);
+}
+
+/* Titres */
+aside h3, main h3 {
+    border-bottom: 2px solid #303030;
+    padding-bottom: 5px;
+    margin-top: 0;
+    font-size: 18px;
+    color: #1E3A8A;
+}
+
+/* Listes */
+aside ul, main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li, main li {
+    margin: 8px 0;
+}
+
+/* Dates */
+.date {
+    display: inline-block;
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Lien LinkedIn */
+a {
+    color: #1E3A8A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    aside, main {
+        margin-bottom: 20px;
+    }
+
+    header .titre h1 {
+        font-size: 28px;
+    }
+
+    header .titre h3 {
+        font-size: 18px;
+    }
+
+    header .profil {
+        max-width: 100%;
+        margin: 10px;
+        font-size: 14px;
+    }
+}
